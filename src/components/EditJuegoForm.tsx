@@ -1,5 +1,5 @@
 import { ChangeEvent, useState, MouseEvent } from "react";
-import Juego from '../models/Videojuego';
+import Juego from '../domain-layer/entities/Videojuego';
 import axios from "axios";
 //import Videojuego from "../models/Videojuego";
 
