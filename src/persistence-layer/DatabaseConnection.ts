@@ -14,7 +14,7 @@ export default class DatabaseConnection {
       port: 3306,
       username: 'root',
       password: 'Fmc10',
-      database: 'car_inventory',
+      database: 'Videojuego_Inventory',
       entities: [Videojuego, Inventario],
       synchronize: true,
     });
