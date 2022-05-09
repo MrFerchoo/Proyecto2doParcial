@@ -1,17 +1,17 @@
-import VideoGame from '../../domain-layer/entities/Videojuego';
+import VideoJuego from '../../domain-layer/entities/Videojuego';
 import DatabaseConnection from '../../persistence-layer/DatabaseConnection';
 import IAsyncTask from './IAsyncTask';
 
-export default class FindCarTask implements IAsyncTask<VideoGame> {
+export default class FindCarTask implements IAsyncTask<VideoJuego> {
     private vgId: number;
 
     public constructor(vgId: number){
         this.vgId = vgId;
     }
 
-    public async execute(): Promise<VideoGame> {
+    public async execute(): Promise<VideoJuego> {
         const databaseConnection = await DatabaseConnection.getInstance();
-        const carRepository = databaseConnection.getRepository(VideoGame);
+        const carRepository = databaseConnection.getRepository(VideoJuego);
 
         const car = await carRepository.findOneBy({ id: this.vgId });
         

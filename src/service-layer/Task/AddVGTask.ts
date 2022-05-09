@@ -1,5 +1,6 @@
 import Videojuego from '../../domain-layer/entities/Videojuego';
 import DatabaseConnection from '../../persistence-layer/DatabaseConnection';
+import FindVGTask from "./FindVGTask";
 import IAsyncTask from './IAsyncTask';
 
 export type AddVGData = {
