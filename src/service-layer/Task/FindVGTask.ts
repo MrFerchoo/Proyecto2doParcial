@@ -2,7 +2,7 @@ import VideoJuego from '../../domain-layer/entities/Videojuego';
 import DatabaseConnection from '../../persistence-layer/DatabaseConnection';
 import IAsyncTask from './IAsyncTask';
 
-export default class FindCarTask implements IAsyncTask<VideoJuego> {
+export default class FindVGTask implements IAsyncTask<VideoJuego> {
     private vgId: number;
 
     public constructor(vgId: number){

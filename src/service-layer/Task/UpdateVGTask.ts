@@ -1,7 +1,6 @@
 import Videojuego from "../../domain-layer/entities/Videojuego";
 import DatabaseConnection from "../../persistence-layer/DatabaseConnection";
 import FindGVTask from './FindVGTask';
-import Inventario from "../../domain-layer/entities/Inventario";
 import IAsyncTask from "./IAsyncTask";
 
 export type UpdateGameData = {

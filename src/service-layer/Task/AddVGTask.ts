@@ -1,11 +1,10 @@
 import Videojuego from '../../domain-layer/entities/Videojuego';
 import DatabaseConnection from '../../persistence-layer/DatabaseConnection';
-import FindVGTask from "./FindVGTask";
 import IAsyncTask from './IAsyncTask';
 
 export type AddVGData = {
-  Name: string,
-  Year: string,
+  name: string,
+  year: string,
 };
 
 export default class AddVGTask implements IAsyncTask<Videojuego> {
