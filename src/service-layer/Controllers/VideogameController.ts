@@ -9,13 +9,15 @@ import BaseController from "./BaseController";
 
 export default class InventoryInsController extends BaseController{
     public constructor(){
-        super('/inventory-ins');
+        super('/vg');
     }
     protected configureRouter(): void {
       this.router.get('/', this.getVGList.bind(this));
-      this.router.get('/', this.findVG.bind(this));
+      this.router.get('/:id', this.findVG.bind(this));
       this.router.get('/', this.addVG.bind(this));
       this.router.get('/', this.getVGList.bind(this));
+      this.router.get('/:id', this.deleteVG.bind(this));
+
 
     }
 
